@@ -1,0 +1,532 @@
+
+    .box-shadow{        
+        position: relative;        
+    }
+    .box-create-info-basic{
+        padding: 10px;
+    }
+    .item-select,
+    .input-create-info{
+        border: 1px solid #000;
+        cursor: pointer;
+    }
+    .item-select:hover,
+    .item-select:focus,
+    .input-create-info:hover,
+    .input-create-info:focus{
+        border: 1px solid #f7b500;
+    }
+    .item-select{
+        margin-bottom:10px;         
+    }    
+    .box-create-info-basic-category,
+    .box-create-info-basic-title{
+        position: relative;
+        margin-bottom:10px;        
+    }
+    .padding-left-right{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .position-sticky{
+        position: sticky;
+        top: 20px;
+    }
+    .item-title-box{
+        position: relative;
+        background-color: #000;
+        color: #f7b500;
+        padding: 10;
+        margin-bottom:20px; 
+        font-size: 20px;
+    }
+    label{
+        cursor: pointer;
+    }
+    .item-check-classify{
+        display: block;
+        font-size: 17px;        
+    }
+    .box-input-create-info{
+        position: relative;
+    }
+    .message-validate{
+        position: absolute;
+        bottom: -17;
+        left: 16px; 
+        color: red;
+        font-size: 13px;    
+        display: none;   
+    }
+    
+    .item-check-classify:hover{
+        color: #f7b500;
+    }      
+    .line{
+        margin: 10 0;
+        width: 100%;
+        border-top: 1px solid #7a5a00;
+        position: relative;
+    }
+    .margin-bottom-10{
+        margin-bottom:10px; 
+    }
+    .form-check-input-classify{        
+        position: absolute;
+        bottom: 0;
+        right: 20;
+    }
+    .position-relative{
+       position: relative; 
+    }
+    .btn-add-classify{        
+        padding: 5px;
+        font-size: 18px;
+    }
+    .box-size,
+   .box-design-classify{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+    /* max-height: 800px;
+    overflow-y: auto;   */
+   }
+    .box-classify{
+        width: 100%;
+        display: block;
+        position: relative;
+        margin-top:30px;
+        margin-left:5px; 
+        margin-right:5px; 
+        margin-bottom:15px; 
+        z-index: 2;   
+        border: 1px solid #2b2b2b;
+        border-radius:20px;  
+        transition: border-color 0.3s ease;   
+    }
+    .input-classify-name{
+        left:20px; 
+        position: absolute;        
+        text-align: center;
+        width: 40%;
+        height: 45px;        
+        border-radius:10px; 
+        border-top: 1px solid #2b2b2b; 
+        border-left: 1px solid #2b2b2b; 
+        border-right: 1px solid #2b2b2b; 
+        border-bottom: 1px solid white;
+        top: -25px;
+        background-color: white;
+        z-index: 9!important;
+        cursor: pointer;
+    }
+    .input-classify-name.border-name-red{
+        border: 1px solid red; 
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+    }
+    .input-classify-name:hover,
+    .input-classify-name:focus{
+        display: block;
+        border-top: 1px solid #f7b500; 
+        border-left: 1px solid #f7b500; 
+        border-right: 1px solid #f7b500; 
+        border-bottom: 1px solid white; 
+        background-color: white;              
+    }
+    .box-classify-details{
+        margin-top: 30px;        
+    }
+    .box-classify-details-info-basic{
+        padding: 0 30 5 30 ;
+        position: relative;
+    }
+    .classify-message{
+        position: absolute;
+        bottom: -7;
+        left: 15;
+        font-size: 13px;
+        color: crimson;
+    }
+    .message-classify-name{
+        position: absolute;
+        background-color: none;
+        width: 27px;        
+        z-index: 10;
+        top: -48px;
+        left: 41%;
+        font-size: 40px;
+        color: red;
+        cursor: pointer;
+    }
+    .input-check-design-size{
+        position: absolute;
+        right: 20px;
+        top: -14px;
+        padding: 0 5px;
+        background-color: white;
+    }
+    .input-classify-price{
+        position: relative;
+        transition: all 0.3s;
+    }
+    .margin-bottom-10{
+        margin-bottom: 10px;
+    }
+    .item-title-design-size{
+        position: absolute;
+        background-color: white;
+        top: -15px;
+        left: 5px;
+        padding-right:4px;
+        padding-left:4px;
+        color: #7a5a00; 
+    }
+    .box-size-details{
+        position: relative;
+        margin: 7px;
+        width: 270px;
+        border: 1px solid #474747;
+        padding: 4px;
+        border-radius:5px; 
+        margin-top:15px;
+        margin-bottom:13px; 
+    }
+    .input-size-name{
+        position: absolute;
+        top: -15px;
+        left: 0;
+        width: 100%;
+        height: 35px;
+        padding: 3px;
+        border-top: 1px solid #474747;  
+        border-left: 1px solid #474747;  
+        border-right: 1px solid #474747;  
+        border-top-left-radius:5px; 
+        border-top-right-radius:5px; 
+        text-align: center;
+        cursor: pointer;
+    }
+    .margin-bottom-5{
+        margin-bottom:5px; 
+    }
+    .box-size-details-info-basic{
+        padding-top:35px;  
+    }
+    .line-margin-left-right-20{
+        margin: 0 20;        
+    }
+    .box-size{
+        margin-top:-15px;
+        padding-top:30px;  
+        max-height: 280px;
+        overflow-y: auto;
+        border-top: 1px solid #bdbdbd;
+        border-left: 1px solid #bdbdbd;
+        border-right: 1px solid #bdbdbd;
+        border-top-left-radius:10px; 
+        border-top-right-radius:10px;
+
+    }
+    .classify-size-rename{               
+        border-radius:5px; 
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        text-align: center;
+    }
+    .btn-add-size{
+        padding: 5px;
+        font-size: 18px;
+        width: 40%;
+        position: relative;
+        top: 14px;
+        left: 50%;
+        transform: translateX(-50%);        
+        background-color: white;
+        z-index: 3;
+    }
+    .input-create-size{
+        height: 35px;
+    }
+    .message-size-name{
+        position: absolute;
+        font-size: 13px;
+        color: red;
+        top: 19px;
+    }
+    .item-count-size{
+        position: absolute;
+        font-size: 20px;
+        top: -19px;
+        background-color: white;
+        right: 2%;
+        color: #AAAAAA;
+        cursor: pointer;
+        width: auto;
+        text-align: center;
+    }
+    .input-classify-quantity{
+        position: relative;
+        display: none;
+    }
+    .border-message{
+        border: 1px solid red;        
+    }
+    .item-remove-box-size{
+        position: absolute;
+        font-size: 40px;
+        color: crimson;
+        background-color: white;
+        top: -23;
+        right: -7;
+        opacity: 0;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    .box-size-details:hover .item-remove-box-size{                                  
+        opacity: 1;
+    }
+    .box-input-create-size{
+        position: relative;
+        padding-bottom:5px;         
+    }
+    .message-size-price,
+    .message-size-quantity{
+        display: none;
+        font-size: 13px;
+        color: red;
+        margin-top:-2px;
+    }
+    #item-input-design-key-size,
+    #item-input-design-key-classify{
+        transition: all 0.3s;
+    }
+    .margin-bottom-21{
+        margin-bottom: 21px;
+    }
+    .item-count-classify{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10;   
+        color: white; 
+        font-size: 21px; 
+        cursor: pointer;   
+    }
+    .item-remove-box-classify{
+        position: absolute;
+        bottom: -10px;
+        right: -10px;
+        z-index: 6;
+        color: red;
+        cursor: pointer;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    .box-classify:hover .item-remove-box-classify{
+        opacity: 1;
+    }    
+    /* đăng phương tiện */
+    .product-images{
+        border: 1px solid #2b2b2b;
+        border-radius: 5px;
+        padding: 10px 5px; 
+        margin: 5px 0px;
+    
+    }
+    .box-add-video,
+    .box-add-image{
+        width: 100%;
+        border: 1px solid #f7b500;
+        border-radius: 5px;
+        padding: 20px;
+        min-height: 130px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 14px;
+    }
+    .image.classify{
+        height: 100px;
+    }
+    .title-choose-video,
+    .title-choose-image{
+        font-weight: 500;
+        position: absolute;
+        width: 55%;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+    .title-choose-video{
+        font-size: 17px;
+    }
+    .btn-choose-video,
+    .btn-choose-image{
+        position: absolute;        
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        text-decoration: none;
+        padding: 2px 5px;
+        border: 1px solid #474747;
+        border-radius: 5px;
+    }
+    .data-image,
+    .list-data-image{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .image{
+        width: 100px;
+        height: 130px;
+        margin:15px 10px; 
+        position: relative;        
+    }
+    .item-remove-image{
+        position: absolute;
+        top: -7;
+        right: -7;
+        color: red;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .image:hover .item-remove-image{
+        opacity: 1;
+    }
+    .video{
+        width: 100%;
+        height: 100%;
+    }
+    .data-video{
+        max-height: 300px;
+    }
+    .box-create-product-details{
+        margin-top:30px; 
+    }
+    .input-create-info-details{
+        width: 100%;
+        height: 40px;
+        text-align: center;        
+    }
+    .box-product-input-details{
+        margin: 2px;    
+        padding-bottom:10px;  
+        position: relative;      
+    }
+    .box-input-create-info-details{
+        padding: 1px 5px;
+        position: relative;
+    }
+    .input-create-info-details-key{
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    .input-create-info-details-value{
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    .item-remove-product-details{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: -9; 
+        right: 1;
+        color: red;
+        font-size: 14px;
+        cursor: pointer;
+        opacity: 0;
+    }
+    .box-product-input-details:hover .item-remove-product-details{
+        opacity: 1;
+        transition: all 0.3s;
+    }    
+    .item-remove-product-details:hover .input-create-info-details{
+        background-color: #f7b500;
+    }
+    .btn-add-details-product{
+        position: absolute;
+        top: -20;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+    }
+    .message-validate-info-details{
+        position: relative;
+        color: red;
+        font-size: 13px;
+        display: none;
+    }
+    .box-add-product{
+        background-color: white;
+        position: fixed;
+        bottom: 20px;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 99999;
+        right: 10;        
+    }
+    .btn-submit,
+    .btn-refresh{
+        width: 100px;
+    }
+    #error-validate-image{
+        color: red;
+        font-size: 13px;
+        display: none;
+    }
+    .product-classify-images{
+        padding: 10 20;
+    }
+    #box-video{
+        position: relative;  
+        margin-top: 20px;
+        height: 300px; 
+        border: 1px solid #000; 
+        border-radius: 5px;   
+    }
+    .item-remove-video{
+        top: -10;
+        right: -10;
+        position: absolute;
+        color: red;
+        cursor: pointer;
+        opacity: 0;
+    }
+    #box-video:hover .item-remove-video{
+        opacity: 1;
+        transition: all 0.3s
+    }
+    .cover-image{    
+        position: absolute;
+        display: flex;
+        justify-content: center; 
+        align-items: center;   
+        bottom: 0;
+        width: 100%;
+        height: 25px;
+        font-size: 13px;
+        color: black;
+        background-color: #f8d164;
+        border: 1px solid  #f7b500;
+        opacity: 0;  
+        transition: all 0.3s;  
+        cursor: default;    
+    }    
+    .image:hover .cover-image{
+        opacity: 1;
+    }
+    .convert-cover-image{
+        cursor: pointer;
+    }

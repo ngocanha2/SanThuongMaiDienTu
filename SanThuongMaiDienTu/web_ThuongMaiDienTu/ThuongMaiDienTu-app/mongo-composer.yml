@@ -1,0 +1,40 @@
+
+version: '3.8'
+
+services:
+
+  mongo:
+    image: mongo
+    container_name: mongo-container
+    ports:
+      - 27018:27017
+    volumes:
+      - './mongodb:/data/db'
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: TMDT12345678
+
+  mongo-express:
+    image: mongo-express
+    container_name: mongo-express-container
+    restart: always
+    ports:
+      - 8088:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: TMDT12345678
+      ME_CONFIG_MONGODB_URL: mongodb://root:TMDT12345678@mongo:27017/
+
+#cài đặt docker
+#chạy: docker-compose -f mongo-composer.yml up
+#stop server: docker-compose -f mongo-composer.yml down
+#chạy ngầm: docker-compose -f mongo-composer.yml up --detach  (--d)
+#xem images: docker images
+#xem các container đang hoạt động: docker ps
+#docker logs: docker logs mongo-express-container
+#tải robo 3T về
+#connection Robo 3T: "mongodb://root:TMDT12345678@localhost:27017/"
+#nếu dùng mongosh "mongodb://root:TMDT12345678@localhost:27017/" --username root --authenticationData admin
+#php artisan serve
+# lần đầu tải sẽ phải đợi lâu thêm 1 chút
